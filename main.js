@@ -41,16 +41,3 @@ document.addEventListener("DOMContentLoaded", function () {
   // Hide default cursor when over the document
   document.body.style.cursor = "none";
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-  const circleCursor = document.querySelector(".circle-cursor");
-
-  // Update custom cursor position based on mouse movement
-  document.addEventListener("mousemove", function (e) {
-    circleCursor.style.left = e.pageX + "px";
-    circleCursor.style.top = e.pageY + "px";
-  });
-
-  // Hide default cursor when over the document
-  document.body.style.cursor = "none";
-});
